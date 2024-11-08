@@ -8,7 +8,384 @@
 </head>
 <body>
     <div class="container">
-        
+        <header>
+            <nav class="navbar">
+                <div class="navbar__logo">
+                    <a href="#">
+                        <img 
+                            src="./ressources/logo.svg" 
+                            alt="logo"
+                            width="100"
+                        >
+                    </a>
+                </div>
+                <div class="navbar__menu">
+                    <ul class="navbar__list">
+                        <li class="navbar__item"><a href="#">Home</a></li>
+                        <li class="navbar__item"><a href="#">Category</a></li>
+                        <li class="navbar__item"><a href="#">About</a></li>
+                        <li class="navbar__item"><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar__actions">
+                    <div class="searchBox">
+                        <img 
+                            src="./ressources/icons/search.svg"
+                            alt="search icon"
+                            width="20"
+                        >
+                        <input 
+                            type="text" 
+                            placeholder="Search something here!"
+                        >
+                    </div>
+                    <a href="#" class="btn btn--primary">Login</a>
+                </div>
+            </nav>
+            <section class="hero">
+                <div class="hero__content">
+                    <div class="hero__heading">
+                        <h1>
+                            One More Friend
+                        </h1>
+                        <h2>Thousands More Fun</h2>
+                    </div>
+                    <p class="hero__description">
+                        Having a pet means you have more joy, a new friend, a happy person who will always be with you to have fun. We have 200+ different pets that can meet your needs!*
+                    </p>
+                    <div class="hero__actions">
+                        <a href="#" class="btn btn--secondary">
+                            View Intro 
+                            <img 
+                                src="./ressources/icons/play_circle.svg" 
+                                alt="play circle icon"
+                                width="20"
+                            >
+                        </a>
+                        <a href="#" class="btn btn--primary">
+                            Explore Now 
+                        </a>
+                    </div>
+                </div>
+                <img 
+                    class="hero__img"
+                    src="./ressources/hero_img.png" 
+                    alt="hero image"
+                    title="femme avec le sourire tenant son chien dans les mains"
+                >
+            </section>         
+        </header>
+        <section class="posts">
+            <header>
+                <div class="posts__heading">
+                    <p>Whats new ?</p>
+                    <h2>Take a Look At Some Of Our Pets</h2>
+                </div>
+                <a href="#" class="btn btn--secondary">
+                    View more
+                    <img 
+                        src="./ressources/icons/chevron_right.svg" 
+                        alt="arrow right icon"
+                        width="20"
+                    >
+                </a>
+            </header>
+            <div class="posts__list">
+                <div class="post">
+                    <div class="post__img">
+                        <img src="./ressources/posts/image 2.jpg" alt="post img">
+                    </div>
+                    <div class="post__content">
+                        <p class="post__title">MO231 - Pomeranian White</p>
+                        <div class="post__informations">
+                            <p>
+                                <span>Gene: <span class="bold">Male</span></span>    
+                            </p>
+                            <div class="dot"></div>
+                            <p>
+                                <span>Age: <span class="bold">02 months</span></span>    
+                            </p>
+                        </div>
+                        <p class="post__price">6.900.000 VND</p>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post__img">
+                        <img src="./ressources/posts/image 2-2.jpg" alt="post img">
+                    </div>
+                    <div class="post__content">
+                        <p class="post__title">MO502 - Poodle Tiny Yellow</p>
+                        <div class="post__informations">
+                            <p>
+                                <span>Gene: <span class="bold">Female</span></span>    
+                            </p>
+                            <div class="dot"></div>
+                            <p>
+                                <span>Age: <span class="bold">02 months</span></span>    
+                            </p>
+                        </div>
+                        <p class="post__price">3.900.000 VND</p>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post__img">
+                        <img src="./ressources/posts/image 2-4.jpg" alt="post img">
+                    </div>
+                    <div class="post__content">
+                        <p class="post__title">MO102 - Poodle Tiny Sepia</p>
+                        <div class="post__informations">
+                            <p>
+                                <span>Gene: <span class="bold">Male</span></span>    
+                            </p>
+                            <div class="dot"></div>
+                            <p>
+                                <span>Age: <span class="bold">02 months</span></span>    
+                            </p>
+                        </div>
+                        <p class="post__price">4.000.000 VND</p>
+
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post__img">
+                        <img src="./ressources/posts/image 2-6.jpg" alt="post img">
+                    </div>
+                    <div class="post__content">
+                        <p class="post__title">MO512 - Alaskan Malamute Grey</p>
+                        <div class="post__informations">
+                            <p>
+                                <span>Gene: <span class="bold">Male</span></span>    
+                            </p>
+                            <div class="dot"></div>
+                            <p>
+                                <span>Age: <span class="bold">03 months</span></span>    
+                            </p>
+                        </div>
+                        <p class="post__price">8.900.000 VND</p>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post__img">
+                        <img src="./ressources/posts/image 2-1.jpg" alt="post img">
+                    </div>
+                    <div class="post__content">
+                        <p class="post__title">MO231 - Pembroke Corgi Cream</p>
+                        <div class="post__informations">
+                            <p>
+                                <span>Gene: <span class="bold">Male</span></span>    
+                            </p>
+                            <div class="dot"></div>
+                            <p>
+                                <span>Age: <span class="bold">03 months</span></span>    
+                            </p>
+                        </div>
+                        <p class="post__price">7.900.000 VND</p>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post__img">
+                        <img src="./ressources/posts/image 2-3.jpg" alt="post img">
+                    </div>
+                    <div class="post__content">
+                        <p class="post__title">MO502 - Pembroke Corgi Tricolor </p>
+                        <div class="post__informations">
+                            <p>
+                                <span>Gene: <span class="bold">Female</span></span>    
+                            </p>
+                            <div class="dot"></div>
+                            <p>
+                                <span>Age: <span class="bold">02 months</span></span>    
+                            </p>
+                        </div>
+                        <p class="post__price">9.000.000 VND</p>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post__img">
+                        <img src="./ressources/posts/image 2-5.jpg" alt="post img">
+                    </div>
+                    <div class="post__content">
+                        <p class="post__title">MO102 -  Pomeranian Grey</p>
+                        <div class="post__informations">
+                            <p>
+                                <span>Gene: <span class="bold">Female</span></span>    
+                            </p>
+                            <div class="dot"></div>
+                            <p>
+                                <span>Age: <span class="bold">02 months</span></span>    
+                            </p>
+                        </div>
+                        <p class="post__price">6.500.000 VND</p>
+
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post__img">
+                        <img src="./ressources/posts/image 2-7.jpg" alt="post img">
+                    </div>
+                    <div class="post__content">
+                        <p class="post__title">MO512 - Poodle Tiny Dairy Cow</p>
+                        <div class="post__informations">
+                            <p>
+                                <span>Gene: <span class="bold">Male</span></span>    
+                            </p>
+                            <div class="dot"></div>
+                            <p>
+                                <span>Age: <span class="bold">03 months</span></span>    
+                            </p>
+                        </div>
+                        <p class="post__price">5.000.000 VND</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="banner-container">
+            <div class="banner">
+                <img src="./ressources/banner_img.png" alt="banner image">
+                <div class="banner__content">
+                    <div class="banner__heading">
+                        <h2>One More Friend</h2>
+                        <h3>Thousands Mor Fun!</h3>
+                    </div>
+                    <p>
+                        Having a pet means you have more joy, a new friend, 
+                        a happy person who will always be with you to have 
+                        fun. We have 200+ different pets that can meet your needs!
+                    </p>
+                    <div class="banner__actions">
+                        <a href="#" class="btn btn--secondary">
+                            View Intro
+                            <img 
+                                src="./ressources/icons/play_circle.svg" 
+                                alt="play circle icon"
+                                width="20"
+                            >
+                        </a>
+                        <a href="#" class="btn btn--primary">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="blogs">
+            <header>
+                <div class="blogs__heading">
+                    <p>You already know ?</p>
+                    <h2>Useful Pet Knowledge</h2>
+                </div>
+                <a href="#" class="btn btn--secondary">
+                    View more
+                    <img 
+                        src="./ressources/icons/chevron_right.svg" 
+                        alt="arrow right icon"
+                        width="20"
+                    >
+                </a>
+            </header>
+            <div class="blogs__list">
+                <div class="blog">
+                    <div class="blog__img">
+                        <img src="./ressources/blog/image 3.jpg" alt="blog img">
+                    </div>
+                    <div class="blog__content">
+                        <span class="blog__tag">Pet knowledge</span>
+                        <p class="blog__title">What is a Pomeranian? How to Identify Pomeranian Dogs</p>
+                        <p class="blog__description">
+                            The Pomeranian, also known as the Pomeranian (Pom dog), is always in the top of 
+                            the cutest pets. Not only that, the small, lovely, smart, friendly, and skillful circus dog breed.
+                        </p>
+                    </div>
+                </div>
+                <div class="blog">
+                    <div class="blog__img">
+                        <img src="./ressources/blog/image 3-1.jpg" alt="blog img">
+                    </div>
+                    <div class="blog__content">
+                        <span class="blog__tag">Pet knowledge</span>
+                        <p class="blog__title">Dog Diet You Need To Know</p>
+                        <p class="blog__description">
+                            Dividing a dog's diet may seem simple at first, but there are some rules you should know so that 
+                            your dog can easily absorb the nutrients in the diet. For those who are just starting to raise dogs, 
+                            especially newborn puppies with relatively weak resistance.
+                        </p>
+                    </div>
+                </div>
+                <div class="blog">
+                    <div class="blog__img">
+                        <img src="./ressources/blog/image 3-2.jpg" alt="blog img">
+                    </div>
+                    <div class="blog__content">
+                        <span class="blog__tag">Pet knowledge</span>
+                        <p class="blog__title">Why Dogs Bite and Destroy Furniture and How to Prevent It Effectively</p>
+                        <p class="blog__description">
+                            Dog bites are common during development. However, no one wants to see their furniture or important
+                            items being bitten by a dog.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="footer-container">
+            <footer class="footer">
+                <div class="footer__content">
+                    <div class="newletter">
+                        <h2>Register now so you don't miss our programs</h2>
+                        <div class="newletter__form">
+                            <input 
+                                type="email" 
+                                placeholder="Enter your Email"
+                            >
+                            <button class="btn btn--subscribe">Subscribe Now</button>
+                        </div>
+                    </div>
+                    <nav class="footer__nav">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Category</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                        
+                        <div class="box-icons">
+                            <img 
+                                src="./ressources/icons/Facebook - Negative.svg" 
+                                alt="facebook icon" 
+                                width="24"
+                            >
+                            <img 
+                                src="./ressources/icons/Twitter - Negative.svg" 
+                                alt="twitter icon" 
+                                width="24"
+                            >
+                            <img 
+                                src="./ressources/icons/Instagram - Negative.svg" 
+                                alt="instagram icon" 
+                                width="24"
+                            >
+                            <img 
+                                src="./ressources/icons/YouTube - Negative.svg" 
+                                alt="youtube icon" 
+                                width="24"
+                            >
+                        </div>
+                    </nav>
+                </div>
+                <div class="footer__bottom">
+                    <span>&copy; 2022 Monito. All rights reserved.</span>
+                    <img 
+                        src="./ressources/logo.svg" 
+                        alt="logo" 
+                        width="100"
+                    >
+                    <div>
+                        <div>
+                            <span>Terms of Service</span>
+                            <span>Privacy Policy</span>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
     </div>
 </body>
 </html>

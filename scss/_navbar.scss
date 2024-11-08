@@ -1,0 +1,66 @@
+@use "variables" as *;
+
+.navbar {
+    width: 100%;
+    max-width: $max-width;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: auto;
+    padding-inline: $padding-inline;
+    height: 96px;
+    gap: 1.3rem;
+
+    &__menu {
+        display: none;
+
+        @media screen and (min-width: 768px) {
+            display: block;
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        list-style-type: none;
+    }
+
+    &__item > a {
+        cursor: pointer;
+        transition: color 0.3s;
+        text-decoration: none;
+        color: $primary-color;
+        font-weight: 700;
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 1.5rem;
+    }
+}
+
+.searchBox {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        height: 48px;
+        background-color: $white;
+        padding-inline: 1rem;
+        border-radius: 999px;
+    }
+
+    > input {
+        width: 100%;
+        height: 100%;
+        padding-inline: 1rem;
+        border: none;
+        font-size: 1rem;
+        outline: none;
+    }
+}

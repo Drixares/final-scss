@@ -1,3 +1,126 @@
-h1 {
-    color: yellow;
+@use "variables" as *;
+@use "navbar";
+@use "buttons";
+@use "posts";
+@use "blogs";
+@use "footer";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    overflow-x: hidden;
+}
+
+.container > header {
+    position: relative;
+    background: $background-primary;
+    min-height: 100svh;
+}
+
+.hero {
+    width: 100%;
+    max-width: $max-width;
+    margin-inline: auto;
+    padding: 7rem $padding-inline 0;
+    display: flex;
+    justify-content: space-between;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        max-width: 40rem;
+    }
+
+    &__heading {
+        color: $primary-color;
+
+        h1 {
+            font-weight: bolder;
+            font-size: 4.5rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    &__img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        max-width: 65rem;
+        overflow: hidden;
+    }
+}
+
+
+.banner-container {
+    padding-inline: $padding-inline;
+    padding-bottom: 7rem;
+}
+
+.banner {
+    width: 100%;
+    max-width: $max-width;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: $background-secondary;
+    border-radius: 1.5rem;
+        
+    > img {
+        align-self: flex-end;
+        max-width: 40rem;
+        width: 100%;
+    }
+    
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        max-width: 32rem;
+        margin: 5rem ;
+        text-align: end;
+    }
+
+    &__heading {
+        color: $primary-color;
+
+        h2 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+        h3 {
+            margin-top: .5rem;
+            font-size: 2.7rem;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 1.5rem;
+    }
+
 }
