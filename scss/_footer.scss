@@ -1,110 +1,106 @@
 @use "variables" as *;
 
+@mixin flex-center($gap: 1rem) {
+  display: flex;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .footer-container {
-    background: $background-primary;
-    padding-inline: $padding-inline;
+  background: $background-primary;
+  padding-inline: $padding-inline;
 
-    .footer {
-        width: 100%;
-        max-width: $max-width;
-        margin-inline: auto;
-        padding-block: 7rem 5rem;
+  .footer {
+    width: 100%;
+    max-width: $max-width;
+    margin-inline: auto;
+    padding-block: 7rem 5rem;
 
-        &__bottom {
-            margin-top: 2rem;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 2rem;
+    &__bottom {
+      margin-top: 2rem;
+      width: 100%;
+      @include flex-between;
+      gap: 2rem;
 
-            > div {
-                display: flex;
-                align-items: center;
-                justify-content: flex-end;
-                
-                div {
-                    display: flex;
-                    align-items: center;
-                    justify-content: flex-end;
-                    gap: 1.5rem;
-                }
-            }
-
-            > *:not(img) {
-                flex: 1 1 0;
-            }
+      > div {
+        @include flex-center;
+        justify-content: flex-end;
+        
+        div {
+          @include flex-center(1.5rem);
+          justify-content: flex-end;
         }
+      }
 
-        &__nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 2rem;
-            padding-block: 2rem;
-            border-bottom: 1px solid #99A2A5;
-
-            ul {
-                display: flex;
-                gap: 1.5rem;
-
-                li {
-                    list-style: none;
-                    cursor: pointer;
-                    
-                    a {
-                        color: $text-color;
-                        text-decoration: none;
-                    }
-                }
-            }
-        }
+      > *:not(img) {
+        flex: 1 1 0;
+      }
     }
+
+    &__nav {
+      @include flex-between;
+      gap: 2rem;
+      padding-block: 2rem;
+      border-bottom: 1px solid #99A2A5;
+
+      ul {
+        @include flex-center(1.5rem);
+
+        li {
+          list-style: none;
+          cursor: pointer;
+          
+          a {
+            color: $text-color;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
 }
 
 .newletter {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex-between;
     gap: 3rem;
     background-color: $newsletter-background;
     border-radius: 1rem;
     padding: 3rem 2rem;
 
-    > h2 {
-        font-size: 2rem;
-        max-width: 30rem;
-        font-weight: bold;
-        color: $primary-color;
-        color: $white;
-        flex-shrink: 0;
-    }
+  > h2 {
+    font-size: 2rem;
+    max-width: 30rem;
+    font-weight: bold;
+    color: $white;
+    flex-shrink: 0;
+  }
 
-    &__form {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        gap: 1rem;
+  &__form {
+    @include flex-center(1rem);
+    justify-content: flex-end;
+    background-color: $white;
+    padding: 1rem;
+    border-radius: .8rem;
+    width: 100%;
+
+    > input {
         background-color: $white;
-        padding: 1rem;
-        border-radius: .8rem;
+        border: 1px solid #99A2A5;
+        height: 48px;
+        padding-inline: 1rem;
+        border-radius: 0.5rem;
         width: 100%;
-
-        > input {
-            background-color: $white;
-            border: none;
-            height: 48px;
-            padding-inline: 1rem;
-            border-radius: 0.5rem;
-            border: 1px solid #99A2A5;
-            width: 100%;
-        }
     }
+  }
 }
 
 .box-icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
+  @include flex-center(1.5rem);
+  justify-content: center;
 }
